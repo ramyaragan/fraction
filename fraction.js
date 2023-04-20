@@ -1,30 +1,31 @@
+const prompt = require('prompt-sync)();
+class subract(){
+  constructor(a,b){
+    this.a = a;
+    this.b = b;
+    this.c = a-b;
+  }
+  get_c(){
+    return(this.c);
+  }
+}
 
-const prompt = require('prompt-sync')();
-class numbers{
-  constructor(a,b)
-  {
-    this.a=a;
-    this.b=b;
-    this.product = a*b
-   }
-   get_product(){
-    return this.product
-    
- function display_product(p){
-  console.log("The product of  %f,%f is %f", p.a,p.b,p.product);
-  
- 
-function input_numbers()
-{
-  a = parseFloat(prompt("Enter a number:"));
-  b = parseFloat(prompt("Enter a number:"));
-  
-  return new numbers(a,b);
+function input(){
+  a = parseInt(prompt("Enter 1st number");
+  b = parseInt(prompt("Enter 2nd number");
+  return[a,b];
+}
+
+function output(s){
+  console.log("The difference between %d and %d is %d",s.a,s.b,s.c);
 }
 
 function main(){
-  n = input_numbers();
-  display_product(n);
+  let a = 0;
+  let b = 0;
+  [a,b] = input();
+  let s = new subract(a,b);
+  output(s);
 }
 
 main();
