@@ -27,3 +27,5 @@ function main(){
   let s = new subract(a,b);
   output(s);
 }
+
+main();
